@@ -38,13 +38,13 @@ android {
 
 }
 
-apply plugin: 'com.didi.virtualapk.plugin'
+//apply plugin: 'com.didi.virtualapk.plugin'
 
-virtualApk {
-    packageId = 0x61 // the package id of Resources.
-    targetHost = '../app' // the path of application module in host project.
-    applyHostMapping = true //optional, default value: true.
-}
+//virtualApk {
+//    packageId = 0x61 // the package id of Resources.
+//    targetHost = '../app' // the path of application module in host project.
+//    applyHostMapping = true //optional, default value: true.
+//}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':lib_common')
